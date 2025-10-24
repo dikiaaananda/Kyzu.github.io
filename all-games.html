@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semua Game - KYZU Gaming Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/maskot logo.png" alt="KYZU Logo" class="logo-img"> 
+    <div class="logo">KYZU <span>Gaming Store</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Hubungi Kami</a>
+    </nav>
+  </header>
+
+  <!-- Game List -->
+  <h2 class="section-title" id="games">Semua Game</h2>
+  <div class="grid grid-5-cols" id="all-games-list">
+    <!-- Daftar game dari localStorage akan ditampilkan di sini -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 KYZU Gaming Store. Semua game adalah produk digital resmi.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const gameListContainer = document.getElementById('all-games-list');
+
+      // Coba ambil data game dari localStorage
+      const getGames = () => {
+        const gamesJSON = localStorage.getItem('games');
+        try {
+          // Jika tidak ada data, kembalikan array kosong
+          return gamesJSON ? JSON.parse(gamesJSON) : [];
+        } catch (e) {
+          console.error("Error parsing games from localStorage", e);
+          return [];
+        }
+      };
+
+      // Fungsi untuk merender satu kartu game
+      const renderGameCard = (game) => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        
+        // Tombol "Beli Sekarang" akan selalu ditampilkan.
+        // Jika game.link kosong, akan menggunakan '#' sebagai placeholder.
+        card.innerHTML = `
+          <img src="${game.image}" alt="${game.title}">
+          <h3>${game.title}</h3>
+          <p class="price">${game.price}</p>
+          <a href="https://wa.me/6281234567890?text=Saya%20mau%20membeli%20produk%20${encodeURIComponent(game.title)}" class="btn" target="_blank">Beli Sekarang</a>
+        `;
+        gameListContainer.appendChild(card);
+      };
+
+      // Fungsi untuk merender semua game
+      const renderAllGames = () => {
+        gameListContainer.innerHTML = ''; // Kosongkan daftar sebelum render ulang
+        const games = getGames();
+        if (games.length > 0) {
+          games.forEach(renderGameCard);
+        } else {
+          gameListContainer.innerHTML = '<p style="text-align: center; grid-column: 1 / -1; background: #fff; padding: 20px; border: 4px solid #000;">Belum ada game yang ditambahkan. Silakan tambahkan melalui halaman admin.</p>';
+        }
+      };
+
+      const games = getGames();
+      if (games.length > 0) {
+        games.forEach(renderGameCard);
+      } else {
+        gameListContainer.innerHTML = '<p style="text-align: center; grid-column: 1 / -1; background: #fff; padding: 20px; border: 4px solid #000;">Belum ada game yang ditambahkan. Silakan tambahkan melalui halaman admin.</p>';
+      }
+      // Panggil fungsi renderAllGames untuk menampilkan semua game saat halaman dimuat
+      renderAllGames();
+
+      // Listener untuk sinkronisasi otomatis antar tab
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'games') {
+          renderAllGames();
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

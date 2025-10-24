@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - Tambah Game Baru</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/maskot logo.png" alt="KYZU Logo" class="logo-img"> 
+    <div class="logo">KYZU <span>Admin Panel</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Tambah Game</a>
+      <a href="admin-list.html">Kelola Game</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Form untuk menambah game baru -->
+    <h2 class="section-title">Tambah Game Baru</h2>
+    <div class="admin-form-container">
+      <form id="add-game-form">
+        <div class="form-group">
+          <label for="game-title">Judul Game:</label>
+          <input type="text" id="game-title" name="title" required>
+        </div>
+        <div class="form-group">
+          <label for="game-price">Harga:</label>
+          <input type="text" id="game-price" name="price" placeholder="Contoh: Rp 250.000" required>
+        </div>
+        <div class="form-group">
+          <label for="game-image">URL Gambar Thumbnail:</label>
+          <input type="url" id="game-image" name="image" placeholder="https://..." required>
+        </div>
+        
+        <button type="submit" class="btn btn-large">Tambah Game</button>
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 KYZU Gaming Store. Admin Panel.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('add-game-form');
+
+      // Coba ambil data game dari localStorage
+      const getGames = () => {
+        const gamesJSON = localStorage.getItem('games');
+        try {
+          return gamesJSON ? JSON.parse(gamesJSON) : [];
+        } catch (e) {
+          return [];
+        }
+      };
+
+      // Simpan data game ke localStorage
+      const saveGames = (games) => {
+        localStorage.setItem('games', JSON.stringify(games));
+      };
+
+      // Event listener untuk form submission
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Mencegah halaman reload
+
+        const newGame = {
+          id: Date.now(), // Menambahkan ID unik berdasarkan timestamp
+          title: e.target.elements.title.value,
+          price: e.target.elements.price.value,
+          image: e.target.elements.image.value,
+          link: '', // Tetap kosong sesuai permintaan sebelumnya
+        };
+
+        const games = getGames();
+        games.push(newGame);
+        saveGames(games);
+
+        // Beri notifikasi dan arahkan ke halaman semua game
+        alert('Game baru berhasil ditambahkan!');
+        form.reset(); // Kosongkan form setelah submit
+        window.location.href = 'admin-list.html'; // Arahkan ke halaman kelola game
+
+      });
+    });
+  </script>
+
+</body>
+</html>
