@@ -5,23 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const editForm = document.getElementById('edit-game-form');
   const selectAllCheckbox = document.getElementById('select-all');
   const deleteSelectedButton = document.getElementById('delete-selected');
+  const exportButton = document.getElementById('export-json');
 
-  // Fungsi untuk mengambil game dari file JSON
-  const getGames = async () => {
+  // Fungsi untuk mengambil game dari localStorage.
+  // Fungsi ini juga melakukan sinkronisasi awal dari games.json jika localStorage kosong.
+  const getGames = async (forceFetch = false) => {
+    const localData = localStorage.getItem('games');
+    // Jika ada data di local storage dan tidak dipaksa fetch, gunakan itu.
+    if (localData && !forceFetch) {
+      return JSON.parse(localData);
+    }
+    // Jika tidak, ambil dari file games.json sebagai data dasar.
     try {
       const response = await fetch('games.json');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+      if (!response.ok) throw new Error('Network response was not ok');
       const games = await response.json();
+      localStorage.setItem('games', JSON.stringify(games)); // Simpan ke local storage
       return games;
     } catch (error) {
       console.error('Error fetching games:', error);
       return [];
     }
   };
-
-  // Fungsi untuk merender (menampilkan) game di tabel
   const renderGames = async () => {
     const games = await getGames();
     tableBody.innerHTML = ''; // Kosongkan tabel sebelum mengisi ulang
@@ -48,15 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Fungsi untuk menghapus game
-  const deleteGame = async (id) => {
+  const deleteGame = async (id) => { // Tetap async untuk konsistensi
     let games = await getGames();
     games = games.filter(game => game.id !== id);
-    alert("Data game telah dihapus. Salin data JSON berikut dan perbarui file 'games.json' secara manual:");
-    alert(JSON.stringify(games, null, 2));
+    localStorage.setItem('games', JSON.stringify(games));
+    alert("Game berhasil dihapus dari penyimpanan lokal.");
     renderGames(); // Render ulang tabel
   };
 
-  // Fungsi untuk membuka modal edit
   const openEditModal = async (id) => {
     const games = await getGames();
     const gameToEdit = games.find(game => game.id === id);
@@ -101,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameIndex = games.findIndex(game => game.id === id);
     if (gameIndex > -1) {
       games[gameIndex] = updatedGame;
-      alert("Game berhasil diperbarui. Salin data JSON berikut dan perbarui file 'games.json' secara manual:");
-      alert(JSON.stringify(games, null, 2));
+      localStorage.setItem('games', JSON.stringify(games));
+      alert("Game berhasil diperbarui di penyimpanan lokal.");
       renderGames();
       modal.style.display = 'none'; // Tutup modal
     }
@@ -148,13 +152,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (selectedIds.length > 0 && confirm(`Apakah Anda yakin ingin menghapus ${selectedIds.length} game yang dipilih?`)) {
       let games = await getGames();
       games = games.filter(game => !selectedIds.includes(game.id));
-      alert("Data game telah dihapus. Salin data JSON berikut dan perbarui file 'games.json' secara manual:");
-      alert(JSON.stringify(games, null, 2));
+      localStorage.setItem('games', JSON.stringify(games));
+      alert(`${selectedIds.length} game berhasil dihapus dari penyimpanan lokal.`);
       renderGames();
       toggleDeleteButton(); // Sembunyikan tombol lagi
     }
   });
 
+  // Event listener untuk tombol Ekspor
+  exportButton.addEventListener('click', async () => {
+    const games = await getGames();
+    const jsonString = JSON.stringify(games, null, 2);
+    const blob = new Blob([jsonString], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'games.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    alert('File games.json telah diunduh. Silakan upload file ini ke server Anda untuk mempublikasikan perubahan.');
+  });
+
   // Panggil renderGames saat halaman dimuat
-  renderGames();
+  getGames(true).then(renderGames); // Lakukan fetch awal saat memuat halaman
 });

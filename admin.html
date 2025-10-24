@@ -52,21 +52,6 @@
     document.addEventListener('DOMContentLoaded', () => {
       const form = document.getElementById('add-game-form');
 
-      // Coba ambil data game dari localStorage
-      const getGames = () => {
-        const gamesJSON = localStorage.getItem('games');
-        try {
-          return gamesJSON ? JSON.parse(gamesJSON) : [];
-        } catch (e) {
-          return [];
-        }
-      };
-
-      // Simpan data game ke localStorage
-      const saveGames = (games) => {
-        localStorage.setItem('games', JSON.stringify(games));
-      };
-
       // Event listener untuk form submission
       form.addEventListener('submit', (e) => {
         e.preventDefault(); // Mencegah halaman reload
@@ -79,15 +64,19 @@
           link: '', // Tetap kosong sesuai permintaan sebelumnya
         };
 
-        const games = getGames();
-        games.push(newGame);
-        saveGames(games);
+        // Ambil data game yang sudah ada dari localStorage
+        const existingGames = JSON.parse(localStorage.getItem('games')) || [];
 
-        // Beri notifikasi dan arahkan ke halaman semua game
+        // Tambahkan game baru ke dalam array
+        existingGames.push(newGame);
+
+        // Simpan kembali array yang sudah diperbarui ke localStorage
+        localStorage.setItem('games', JSON.stringify(existingGames));
+
+        // Beri notifikasi sukses, kosongkan form, dan arahkan ke halaman kelola
         alert('Game baru berhasil ditambahkan!');
         form.reset(); // Kosongkan form setelah submit
         window.location.href = 'admin-list.html'; // Arahkan ke halaman kelola game
-
       });
     });
   </script>
