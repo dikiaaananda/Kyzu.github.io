@@ -177,5 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Panggil renderGames saat halaman dimuat
-  getGames(true).then(renderGames); // Lakukan fetch awal saat memuat halaman
+  // Ubah logika: Jangan paksa fetch. Biarkan getGames() yang memutuskan.
+  // getGames() akan menggunakan localStorage jika ada, atau fetch dari .json jika kosong.
+  getGames().then(renderGames);
+
 });
