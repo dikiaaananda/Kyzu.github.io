@@ -33,14 +33,17 @@
     document.addEventListener('DOMContentLoaded', () => {
       const gameListContainer = document.getElementById('all-games-list');
 
-      // Coba ambil data game dari localStorage
-      const getGames = () => {
-        const gamesJSON = localStorage.getItem('games');
+      // Fungsi untuk mengambil game dari file JSON
+      const getGames = async () => {
         try {
-          // Jika tidak ada data, kembalikan array kosong
-          return gamesJSON ? JSON.parse(gamesJSON) : [];
-        } catch (e) {
-          console.error("Error parsing games from localStorage", e);
+          const response = await fetch('games.json');
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const games = await response.json();
+          return games;
+        } catch (error) {
+          console.error('Error fetching games:', error);
           return [];
         }
       };
@@ -62,9 +65,9 @@
       };
 
       // Fungsi untuk merender semua game
-      const renderAllGames = () => {
+      const renderAllGames = async () => {
         gameListContainer.innerHTML = ''; // Kosongkan daftar sebelum render ulang
-        const games = getGames();
+        const games = await getGames();
         if (games.length > 0) {
           games.forEach(renderGameCard);
         } else {
@@ -72,21 +75,8 @@
         }
       };
 
-      const games = getGames();
-      if (games.length > 0) {
-        games.forEach(renderGameCard);
-      } else {
-        gameListContainer.innerHTML = '<p style="text-align: center; grid-column: 1 / -1; background: #fff; padding: 20px; border: 4px solid #000;">Belum ada game yang ditambahkan. Silakan tambahkan melalui halaman admin.</p>';
-      }
       // Panggil fungsi renderAllGames untuk menampilkan semua game saat halaman dimuat
       renderAllGames();
-
-      // Listener untuk sinkronisasi otomatis antar tab
-      window.addEventListener('storage', (e) => {
-        if (e.key === 'games') {
-          renderAllGames();
-        }
-      });
     });
   </script>
 

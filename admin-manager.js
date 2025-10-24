@@ -6,42 +6,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectAllCheckbox = document.getElementById('select-all');
   const deleteSelectedButton = document.getElementById('delete-selected');
 
-  // Fungsi untuk menyimpan game ke localStorage
-  const saveGames = (games) => {
-    localStorage.setItem('games', JSON.stringify(games));
-  };
-
-  // Fungsi untuk mengambil game dari localStorage dan memperbaiki data lama
-  const getGamesAndFix = () => {
-    let games = [];
+  // Fungsi untuk mengambil game dari file JSON
+  const getGames = async () => {
     try {
-      const gamesJSON = localStorage.getItem('games');
-      games = gamesJSON ? JSON.parse(gamesJSON) : [];
-    } catch (e) {
-      console.error("Gagal mem-parsing JSON dari localStorage:", e);
+      const response = await fetch('games.json');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const games = await response.json();
+      return games;
+    } catch (error) {
+      console.error('Error fetching games:', error);
       return [];
     }
-
-    // Cek apakah ada game tanpa ID dan perbaiki
-    let needsSave = false;
-    games.forEach(game => {
-      if (game.id === undefined || game.id === null) {
-        game.id = Date.now() + Math.random(); // Beri ID unik
-        needsSave = true;
-      }
-    });
-
-    // Jika ada perbaikan, simpan kembali ke localStorage
-    if (needsSave) {
-      saveGames(games);
-    }
-
-    return games;
   };
 
   // Fungsi untuk merender (menampilkan) game di tabel
-  const renderGames = () => {
-    const games = getGamesAndFix(); // Gunakan fungsi yang sudah diperbaiki
+  const renderGames = async () => {
+    const games = await getGames();
     tableBody.innerHTML = ''; // Kosongkan tabel sebelum mengisi ulang
     if (games.length === 0) {
       tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center;">Belum ada game yang ditambahkan.</td></tr>';
@@ -66,16 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Fungsi untuk menghapus game
-  const deleteGame = (id) => {
-    let games = getGamesAndFix();
+  const deleteGame = async (id) => {
+    let games = await getGames();
     games = games.filter(game => game.id !== id);
-    saveGames(games);
+    alert("Data game telah dihapus. Salin data JSON berikut dan perbarui file 'games.json' secara manual:");
+    alert(JSON.stringify(games, null, 2));
     renderGames(); // Render ulang tabel
   };
 
   // Fungsi untuk membuka modal edit
-  const openEditModal = (id) => {
-    const games = getGamesAndFix();
+  const openEditModal = async (id) => {
+    const games = await getGames();
     const gameToEdit = games.find(game => game.id === id);
     if (gameToEdit) {
       document.getElementById('edit-game-id').value = gameToEdit.id;
@@ -103,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Event listener untuk form edit
-  editForm.addEventListener('submit', (e) => {
+  editForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const id = Number(document.getElementById('edit-game-id').value);
     const updatedGame = {
@@ -114,14 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
       link: '', // Tetap kosong
     };
 
-    let games = getGamesAndFix();
+    let games = await getGames();
     const gameIndex = games.findIndex(game => game.id === id);
     if (gameIndex > -1) {
       games[gameIndex] = updatedGame;
-      saveGames(games);
+      alert("Game berhasil diperbarui. Salin data JSON berikut dan perbarui file 'games.json' secara manual:");
+      alert(JSON.stringify(games, null, 2));
       renderGames();
       modal.style.display = 'none'; // Tutup modal
-      alert('Game berhasil diperbarui!');
     }
   });
 
@@ -158,14 +141,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Event listener untuk tombol "Hapus yang Dipilih"
-  deleteSelectedButton.addEventListener('click', () => {
+  deleteSelectedButton.addEventListener('click', async () => {
     const selectedIds = Array.from(tableBody.querySelectorAll('.select-game:checked'))
       .map(cb => Number(cb.closest('tr').getAttribute('data-id')));
     
     if (selectedIds.length > 0 && confirm(`Apakah Anda yakin ingin menghapus ${selectedIds.length} game yang dipilih?`)) {
-      let games = getGamesAndFix();
+      let games = await getGames();
       games = games.filter(game => !selectedIds.includes(game.id));
-      saveGames(games);
+      alert("Data game telah dihapus. Salin data JSON berikut dan perbarui file 'games.json' secara manual:");
+      alert(JSON.stringify(games, null, 2));
       renderGames();
       toggleDeleteButton(); // Sembunyikan tombol lagi
     }
