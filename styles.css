@@ -175,3 +175,30 @@ footer {
     font-size: 14px;
   }
 }
+
+/* Gaya untuk Search Bar di halaman all-games.html */
+.search-bar-container {
+  margin: 20px;
+  background: #ffcc00; /* Menggunakan warna kuning tema */
+  border: 4px solid #000;
+  padding: 20px;
+  box-shadow: 6px 6px #000; /* Menambahkan shadow seperti elemen lain */
+}
+
+#game-search-input {
+  width: 100%; /* Input memenuhi container */
+  padding: 12px;
+  border: 4px solid #000; /* Border lebih tebal agar konsisten */
+  font-family: Impact, Arial Black, sans-serif; /* Menyesuaikan font */
+  font-size: 16px;
+  outline: none; /* Menghilangkan outline default saat di-klik */
+  transition: border-color 0.3s;
+}
+
+#game-search-input:focus {
+  border-color: #007bff; /* Mengubah warna border menjadi biru saat aktif */
+}
+
+#game-search-input::placeholder {
+  color: #555;
+}

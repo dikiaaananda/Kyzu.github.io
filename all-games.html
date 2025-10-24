@@ -20,6 +20,9 @@
 
   <!-- Game List -->
   <h2 class="section-title" id="games">Semua Game</h2>
+  <div class="search-bar-container">
+    <input type="text" id="game-search-input" placeholder="Cari game berdasarkan nama...">
+  </div>
   <div class="grid grid-5-cols" id="all-games-list">
     <!-- Daftar game dari localStorage akan ditampilkan di sini -->
   </div>
@@ -32,6 +35,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const gameListContainer = document.getElementById('all-games-list');
+      const gameSearchInput = document.getElementById('game-search-input');
 
       // Fungsi untuk mengambil game dari file JSON
       const getGames = async () => {
@@ -41,7 +45,7 @@
             throw new Error('Network response was not ok');
           }
           const games = await response.json();
-          return games;
+          return games; // Return games for initial storage
         } catch (error) {
           console.error('Error fetching games:', error);
           return [];
@@ -64,19 +68,34 @@
         gameListContainer.appendChild(card);
       };
 
-      // Fungsi untuk merender semua game
-      const renderAllGames = async () => {
-        gameListContainer.innerHTML = ''; // Kosongkan daftar sebelum render ulang
-        const games = await getGames();
-        if (games.length > 0) {
-          games.forEach(renderGameCard);
+      let allGamesData = []; // Variabel untuk menyimpan semua data game
+
+      // Fungsi untuk memfilter dan merender game berdasarkan istilah pencarian
+      const filterAndRenderGames = (searchTerm = '') => {
+        gameListContainer.innerHTML = ''; // Kosongkan daftar sebelum merender ulang
+
+        const lowerCaseSearchTerm = searchTerm.toLowerCase().trim();
+        const filteredGames = allGamesData.filter(game =>
+          game.title.toLowerCase().includes(lowerCaseSearchTerm)
+        );
+
+        if (filteredGames.length > 0) {
+          filteredGames.forEach(renderGameCard);
         } else {
-          gameListContainer.innerHTML = '<p style="text-align: center; grid-column: 1 / -1; background: #fff; padding: 20px; border: 4px solid #000;">Belum ada game yang ditambahkan. Silakan tambahkan melalui halaman admin.</p>';
+          gameListContainer.innerHTML = '<p style="text-align: center; grid-column: 1 / -1; background: #fff; padding: 20px; border: 4px solid #000;">Tidak ada game yang cocok dengan pencarian Anda.</p>';
         }
       };
 
-      // Panggil fungsi renderAllGames untuk menampilkan semua game saat halaman dimuat
-      renderAllGames();
+      // Panggil fungsi getGames untuk mengambil data, lalu render semua game
+      getGames().then(games => {
+        allGamesData = games; // Simpan data game yang diambil
+        filterAndRenderGames(); // Render semua game pada awalnya
+      });
+
+      // Event listener untuk input pencarian
+      gameSearchInput.addEventListener('input', (e) => {
+        filterAndRenderGames(e.target.value);
+      });
     });
   </script>
 
