@@ -70,7 +70,7 @@ nav a:hover { background:#007bff; color:#fff; }
 }
 
 .grid-5-cols{
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .card {
