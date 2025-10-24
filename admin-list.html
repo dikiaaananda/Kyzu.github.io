@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Admin - Kelola Daftar Game</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Pengecekan login admin dijalankan secara langsung untuk mencegah render halaman
+    if (localStorage.getItem('adminLoggedIn') !== 'true') {
+      window.location.href = 'admin-login.html';
+    }
+  </script>
   <style>
     /* Gaya khusus untuk halaman admin list */
     .admin-table-container {
@@ -84,7 +90,8 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="admin.html">Tambah Game</a>
-      <a href="admin-list.html">Kelola Game</a>
+      <a href="admin-list.html">Kelola Game</a> 
+      <a href="#" id="logout-button">Logout</a>
     </nav>
   </header>
 
@@ -92,6 +99,7 @@
     <h2 class="section-title">Kelola Daftar Game</h2>
     <div class="admin-table-container">
       <button id="export-json" class="btn" style="margin-bottom: 15px; background-color: #28a745;">Ekspor ke JSON</button>
+      <button id="sync-json" class="btn" style="margin-bottom: 15px; background-color: #17a2b8;">Sinkronkan dari JSON</button>
       <button id="delete-selected" class="btn btn-delete" style="margin-bottom: 15px; display: none;">Hapus yang Dipilih</button>
       <table class="game-table" id="game-table-body">
         <thead>
@@ -142,4 +150,12 @@
 
   <script src="admin-manager.js"></script>
 
+  <script>
+    // Event listener untuk tombol logout (di admin-list.html)
+    document.getElementById('logout-button').addEventListener('click', (e) => {
+      e.preventDefault();
+      localStorage.removeItem('adminLoggedIn'); // Hapus status login
+      window.location.href = 'admin-login.html'; // Arahkan kembali ke halaman login
+    });
+  </script>
 </body>

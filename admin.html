@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Admin - Tambah Game Baru</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Pengecekan login admin dijalankan secara langsung untuk mencegah render halaman
+    if (localStorage.getItem('adminLoggedIn') !== 'true') {
+      window.location.href = 'admin-login.html';
+    }
+  </script>
 </head>
 <body>
 
@@ -15,7 +21,8 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="admin.html">Tambah Game</a>
-      <a href="admin-list.html">Kelola Game</a>
+      <a href="admin-list.html">Kelola Game</a> 
+      <a href="#" id="logout-button">Logout</a>
     </nav>
   </header>
 
@@ -77,6 +84,14 @@
         alert('Game baru berhasil ditambahkan!');
         form.reset(); // Kosongkan form setelah submit
         window.location.href = 'admin-list.html'; // Arahkan ke halaman kelola game
+      });
+
+      // Event listener untuk tombol logout
+      const logoutButton = document.getElementById('logout-button');
+      logoutButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        localStorage.removeItem('adminLoggedIn'); // Hapus status login
+        window.location.href = 'admin-login.html'; // Arahkan kembali ke halaman login
       });
     });
   </script>

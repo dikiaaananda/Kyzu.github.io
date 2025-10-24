@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Login - KYZU Gaming Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Gaya khusus untuk halaman login */
+    .login-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border: 4px solid #000;
+      box-shadow: 8px 8px #000;
+      text-align: center;
+    }
+    .login-container h2 {
+      color: #007bff;
+      margin-bottom: 25px;
+    }
+    .login-container input[type="password"] {
+      width: calc(100% - 24px); /* Kurangi padding dan border */
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 2px solid #000;
+      font-family: Impact, Arial Black, sans-serif;
+      font-size: 16px;
+    }
+    .login-container .btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Admin Login</h2>
+    <form id="admin-login-form">
+      <input type="password" id="admin-password" placeholder="Masukkan Kata Sandi Admin" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('admin-login-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const password = document.getElementById('admin-password').value;
+      const correctPassword = 'kyzuadmin123'; // Ganti dengan kata sandi yang lebih kuat!
+
+      if (password === correctPassword) {
+        localStorage.setItem('adminLoggedIn', 'true');
+        window.location.href = 'admin-list.html'; // Arahkan ke halaman kelola game setelah login
+      } else {
+        alert('Kata sandi salah!');
+      }
+    });
+  </script>
+
+</body>
+</html>

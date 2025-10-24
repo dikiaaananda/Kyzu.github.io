@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectAllCheckbox = document.getElementById('select-all');
   const deleteSelectedButton = document.getElementById('delete-selected');
   const exportButton = document.getElementById('export-json');
+  const syncButton = document.getElementById('sync-json');
 
   // Fungsi untuk mengambil game dari localStorage.
   // Fungsi ini juga melakukan sinkronisasi awal dari games.json jika localStorage kosong.
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Jika tidak, ambil dari file games.json sebagai data dasar.
     try {
-      const response = await fetch('games.json');
+      const response = await fetch(`games.json?t=${new Date().getTime()}`); // Tambahkan cache-busting
       if (!response.ok) throw new Error('Network response was not ok');
       const games = await response.json();
       localStorage.setItem('games', JSON.stringify(games)); // Simpan ke local storage
@@ -176,9 +177,22 @@ document.addEventListener('DOMContentLoaded', () => {
     alert('File games.json telah diunduh. Silakan upload file ini ke server Anda untuk mempublikasikan perubahan.');
   });
 
+  // Event listener untuk tombol Sinkronisasi
+  syncButton.addEventListener('click', async () => {
+    if (confirm('Apakah Anda yakin ingin menyinkronkan data dari server? Semua perubahan lokal yang belum diekspor akan hilang.')) {
+      try {
+        await getGames(true); // Paksa fetch dari games.json
+        await renderGames(); // Render ulang tabel dengan data baru
+        alert('Sinkronisasi berhasil! Daftar game telah diperbarui dari server.');
+      } catch (error) {
+        alert('Gagal melakukan sinkronisasi. Periksa koneksi atau file games.json di server.');
+      }
+    }
+  });
+
   // Panggil renderGames saat halaman dimuat
   // Ubah logika: Jangan paksa fetch. Biarkan getGames() yang memutuskan.
-  // getGames() akan menggunakan localStorage jika ada, atau fetch dari .json jika kosong.
-  getGames().then(renderGames);
+  // Pindahkan pemanggilan ini ke dalam DOMContentLoaded agar dieksekusi setelah pengecekan login.
+  renderGames();
 
 });
