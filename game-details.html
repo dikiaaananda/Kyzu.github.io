@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Detail Game - KYZU Gaming Store</title>
+  <link rel="icon" type="image/png" href="images/kyzu-logo.png" />
+  <link rel="apple-touch-icon" href="images/kyzu-logo.png" />
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .game-detail-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      border: 4px solid #000;
+      box-shadow: 8px 8px #000;
+    }
+    .game-detail-container img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border: 2px solid #000;
+      margin-bottom: 20px;
+    }
+    .game-detail-container h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .game-detail-container .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .specs-section {
+      width: 100%;
+      margin-top: 20px;
+      border-top: 2px solid #eee;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .specs-column {
+      flex: 1;
+      min-width: 280px;
+      background: #f9f9f9;
+      border: 2px solid #ddd;
+      padding: 15px;
+      box-shadow: 4px 4px #ccc;
+    }
+    .specs-column h3 {
+      font-size: 20px;
+      color: #000;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .specs-column ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .specs-column li {
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    .specs-column li strong {
+      color: #007bff;
+    }
+    .buy-button-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+    @media (max-width: 767px) {
+      .specs-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .specs-column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="images/maskot logo.png" alt="KYZU Logo" class="logo-img"> 
+    <div class="logo">KYZU <span>Gaming Store</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Hubungi Kami</a>
+      <a href="all-games.html">Semua Game</a>
+    </nav>
+  </header>
+
+  <main id="game-details-content">
+    <!-- Konten detail game akan dimuat di sini oleh JavaScript -->
+    <p style="text-align: center; margin-top: 50px;">Memuat detail game...</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 KYZU Gaming Store. Semua game adalah produk digital resmi.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const gameId = Number(urlParams.get('id'));
+      const gameDetailsContent = document.getElementById('game-details-content');
+
+      if (!gameId) {
+        gameDetailsContent.innerHTML = '<p style="text-align: center; margin-top: 50px;">ID Game tidak ditemukan.</p>';
+        return;
+      }
+
+      try {
+        const response = await fetch('games.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const games = await response.json();
+        const game = games.find(g => g.id === gameId);
+
+        if (game) {
+          gameDetailsContent.innerHTML = `
+            <div class="game-detail-container">
+              <img src="${game.image}" alt="${game.title}">
+              <h2>${game.title}</h2>
+              <p class="price">${game.price}</p>
+              ${game.minimum_specs || game.recommended_specs ? `
+                <div class="specs-section">
+                  ${game.minimum_specs ? `
+                    <div class="specs-column">
+                      <h3>Minimum Specifications</h3>
+                      <ul>
+                        <li><strong>OS:</strong> ${game.minimum_specs.os || 'N/A'}</li>
+                        <li><strong>Processor:</strong> ${game.minimum_specs.processor || 'N/A'}</li>
+                        <li><strong>Memory:</strong> ${game.minimum_specs.memory || 'N/A'}</li>
+                        <li><strong>Graphics:</strong> ${game.minimum_specs.graphics || 'N/A'}</li>
+                        <li><strong>Storage:</strong> ${game.minimum_specs.storage || 'N/A'}</li>
+                      </ul>
+                    </div>
+                  ` : ''}
+                  ${game.recommended_specs ? `
+                    <div class="specs-column">
+                      <h3>Recommended Specifications</h3>
+                      <ul>
+                        <li><strong>OS:</strong> ${game.recommended_specs.os || 'N/A'}</li>
+                        <li><strong>Processor:</strong> ${game.recommended_specs.processor || 'N/A'}</li>
+                        <li><strong>Memory:</strong> ${game.recommended_specs.memory || 'N/A'}</li>
+                        <li><strong>Graphics:</strong> ${game.recommended_specs.graphics || 'N/A'}</li>
+                        <li><strong>Storage:</strong> ${game.recommended_specs.storage || 'N/A'}</li>
+                      </ul>
+                    </div>
+                  ` : ''}
+                </div>
+              ` : '<p style="text-align: center; width: 100%;">Spesifikasi tidak tersedia.</p>'}
+              <div class="buy-button-container">
+                <a href="https://wa.me/6283198167563?text=Saya%20mau%20membeli%20produk%20${encodeURIComponent(game.title)}" class="btn btn-large" target="_blank">Beli Sekarang via WhatsApp</a>
+              </div>
+            </div>
+          `;
+        } else {
+          gameDetailsContent.innerHTML = '<p style="text-align: center; margin-top: 50px;">Game tidak ditemukan.</p>';
+        }
+      } catch (error) {
+        console.error('Error fetching game details:', error);
+        gameDetailsContent.innerHTML = '<p style="text-align: center; margin-top: 50px;">Terjadi kesalahan saat memuat detail game.</p>';
+      }
+    });
+  </script>
+
+</body>
+</html>

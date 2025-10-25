@@ -17,7 +17,6 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="contact.html">Hubungi Kami</a>
-      <a href="review.html">Lihat Ulasan</a>
     </nav>
   </header>
 
@@ -64,7 +63,7 @@
           <img src="${game.image}" alt="${game.title}">
           <h3>${game.title}</h3>
           <p class="price">${game.price}</p>
-          <a href="https://wa.me/6283198167563?text=Saya%20mau%20membeli%20produk%20${encodeURIComponent(game.title)}" class="btn" target="_blank">Beli Sekarang</a>
+          <a href="game-details.html?id=${game.id}" class="btn">Lihat Detail & Beli</a>
         `;
         gameListContainer.appendChild(card);
       };
