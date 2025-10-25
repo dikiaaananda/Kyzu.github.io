@@ -186,6 +186,10 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .grid {
+    grid-template-columns: 1fr; /* Mengubah grid utama menjadi 1 kolom di mobile */
+  }
+
   /* Aturan grid-template-columns untuk .grid-5-cols tidak lagi diperlukan di sini karena auto-fit */
 
   .logo {
