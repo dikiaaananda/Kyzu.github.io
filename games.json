@@ -1,86 +1,23 @@
 [
   {
-    "id": 1761306774788,
-    "title": "Cyberpunk 2077",
+    "id": 1761520000001,
+    "title": "Grand Theft Auto V",
     "price": "Rp 8.900",
-    "image": "https://shared.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1756209867",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
     "link": "",
     "minimum_specs": {
-      "os": "Windows 10",
-      "processor": "Intel Core i7-6700 or AMD Ryzen 5 1600",
-      "memory": "12 GB RAM",
-      "graphics": "NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 580 8GB or Intel Arc A380",
-      "storage": "70 GB available space (SSD recommended)"
+      "os": "Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1",
+      "processor": "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
+      "memory": "4 GB RAM",
+      "graphics": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)",
+      "storage": "105 GB available space"
     },
     "recommended_specs": {
-      "os": "Windows 10",
-      "processor": "Intel Core i7-12700 or AMD Ryzen 7 7800X3D",
-      "memory": "16 GB RAM",
-      "graphics": "NVIDIA GeForce RTX 2060 SUPER or AMD Radeon RX 5700 XT or Intel Arc A770",
-      "storage": "70 GB available space (SSD)"
-    }
-  },
-  {
-    "id": 1761309449249,
-    "title": "The Last of Us Part II Remastered",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 10 64-bit",
-      "processor": "Intel Core i5 or AMD equivalent",
+      "os": "Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1",
+      "processor": "Intel Core i5 3470 @ 3.2GHZ (4 CPUs) / AMD X8 FX-8350 @ 4GHZ (8 CPUs)",
       "memory": "8 GB RAM",
-      "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "100 GB available space"
-    },
-    "recommended_specs": {
-      "os": "Windows 10/11 64-bit",
-      "processor": "Intel Core i7 or AMD equivalent",
-      "memory": "16 GB RAM",
-      "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "100 GB available space (SSD recommended)"
-    }
-  },
-  {
-    "id": 1761350204171,
-    "title": "Assassin’s Creed Shadows",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/header.jpg?t=1758300932",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 10 64-bit",
-      "processor": "Intel Core i5 or AMD equivalent",
-      "memory": "8 GB RAM",
-      "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "100 GB available space"
-    },
-    "recommended_specs": {
-      "os": "Windows 10/11 64-bit",
-      "processor": "Intel Core i7 or AMD equivalent",
-      "memory": "16 GB RAM",
-      "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "100 GB available space (SSD recommended)"
-    }
-  },
-  {
-    "id": 1761350290489,
-    "title": "It Takes Two",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg?t=1749142249",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 8.1 or 10",
-      "processor": "Intel Core i3-2100T or AMD FX 6100",
-      "memory": "8 GB RAM",
-      "graphics": "Nvidia GeForce GTX 660 or AMD R7 260x",
-      "storage": "50 GB available space"
-    },
-    "recommended_specs": {
-      "os": "Windows 8.1 or 10",
-      "processor": "Intel Core i5 3570K or AMD Ryzen 3 1300x",
-      "memory": "16 GB RAM",
-      "graphics": "Nvidia GeForce GTX 980 or AMD R9 290X",
-      "storage": "50 GB available space"
+      "graphics": "NVIDIA GTX 660 2GB / AMD HD7870 2GB",
+      "storage": "105 GB available space"
     }
   },
   {
@@ -102,6 +39,195 @@
       "memory": "12 GB RAM",
       "graphics": "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
       "storage": "150 GB available space"
+    }
+  },
+  {
+    "id": 1761391329457,
+    "title": "The Witcher 3: Wild Hunt",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1761131270",
+    "link": "",
+    "minimum_specs": {
+      "os": "64-bit Windows 7 or 64-bit Windows 8 (8.1)",
+      "processor": "Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940",
+      "memory": "6 GB RAM",
+      "graphics": "Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
+      "storage": "50 GB available space"
+    },
+    "recommended_specs": {
+      "os": "64-bit Windows 7 or 64-bit Windows 8 (8.1)",
+      "processor": "Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz",
+      "memory": "8 GB RAM",
+      "graphics": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
+      "storage": "50 GB available space"
+    }
+  },
+  {
+    "id": 1761306774788,
+    "title": "Cyberpunk 2077",
+    "price": "Rp 8.900",
+    "image": "https://shared.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1756209867",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10",
+      "processor": "Intel Core i7-6700 or AMD Ryzen 5 1600",
+      "memory": "12 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 1060 6GB or AMD Radeon RX 580 8GB or Intel Arc A380",
+      "storage": "170 GB available space (SSD Required)"
+    },
+    "recommended_specs": {
+      "os": "Windows 10",
+      "processor": "Intel Core i7-12700 or AMD Ryzen 7 7800X3D",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce RTX 2060 SUPER or AMD Radeon RX 5700 XT or Intel Arc A770",
+      "storage": "170 GB available space (SSD Required)"
+    }
+  },
+  {
+    "id": 1761390594823,
+    "title": "ELDEN RING",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1748630546",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10",
+      "processor": "Intel Core i5-8400 or AMD Ryzen 3 3300X",
+      "memory": "12 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 1060 3GB or AMD Radeon RX 580 4GB",
+      "storage": "60 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10/11",
+      "processor": "Intel Core i7-8700K or AMD Ryzen 5 3600X",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 1070 8GB or AMD Radeon RX Vega 56 8GB",
+      "storage": "60 GB available space"
+    }
+  },
+  {
+    "id": 1761400000001,
+    "title": "Baldur's Gate 3",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg?t=1760000001",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel I5 4690 / AMD FX 8350",
+      "memory": "8 GB RAM",
+      "graphics": "Nvidia GeForce GTX 970 / RX 480 (4GB+ of VRAM)",
+      "storage": "150 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel I7 8700K / AMD Ryzen 5 3600",
+      "memory": "16 GB RAM",
+      "graphics": "Nvidia GeForce RTX 2060 Super / RX 5700 XT (8GB+ of VRAM)",
+      "storage": "150 GB available space (SSD Recommended)"
+    }
+  },
+  {
+    "id": 1761390234460,
+    "title": "The Last of Us Part I",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1750959031",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 Version 1909 or newer",
+      "processor": "AMD Ryzen 5 1500X, Intel Core i7-4770K",
+      "memory": "16 GB RAM",
+      "graphics": "AMD Radeon RX 470 (4 GB), NVIDIA GeForce GTX 970 (4 GB)",
+      "storage": "100 GB available space (SSD)"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 Version 1909 or newer",
+      "processor": "AMD Ryzen 5 3600X, Intel Core i7-8700",
+      "memory": "16 GB RAM",
+      "graphics": "AMD Radeon RX 5700 XT (8 GB), NVIDIA GeForce RTX 2070 SUPER (8 GB)",
+      "storage": "100 GB available space (SSD)"
+    }
+  },
+  {
+    "id": 1761391855071,
+    "title": "Hogwarts Legacy",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/a3cdc6f40d97df8ac993679c2dd1edeb5222421e/header.jpg?t=1753912780",
+    "link": "",
+    "minimum_specs": {
+      "os": "64-bit Windows 10",
+      "processor": "Intel Core i5-6600 (3.3Ghz) or AMD Ryzen 5 1400 (3.2Ghz)",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB",
+      "storage": "85 GB available space"
+    },
+    "recommended_specs": {
+      "os": "64-bit Windows 10",
+      "processor": "Intel Core i7-8700 (3.2Ghz) or AMD Ryzen 5 3600 (3.6 Ghz)",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce 1080 Ti or AMD Radeon RX 5700 XT or INTEL Arc A770",
+      "storage": "85 GB available space (SSD)"
+    }
+  },
+  {
+    "id": 1761309449249,
+    "title": "The Last of Us Part II Remastered",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2531310/header.jpg?t=1750959180",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel Core i5 or AMD equivalent",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
+      "storage": "100 GB available space (SSD Required)"
+    },
+    "recommended_specs": {
+      "os": "Windows 10/11 64-bit",
+      "processor": "Intel Core i7 or AMD equivalent",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
+      "storage": "100 GB available space (SSD Required)"
+    }
+  },
+  {
+    "id": 1761350204171,
+    "title": "Assassin’s Creed Shadows",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/header.jpg?t=1758300932",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel Core i5 or AMD equivalent",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
+      "storage": "100 GB available space (SSD Required)"
+    },
+    "recommended_specs": {
+      "os": "Windows 10/11 64-bit",
+      "processor": "Intel Core i7 or AMD equivalent",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
+      "storage": "100 GB available space (SSD Required)"
+    }
+  },
+  {
+    "id": 1761350290489,
+    "title": "It Takes Two",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1426210/header.jpg?t=1749142249",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 8.1 or 10",
+      "processor": "Intel Core i3-2100T or AMD FX 6100",
+      "memory": "8 GB RAM",
+      "graphics": "Nvidia GeForce GTX 660 or AMD R7 260x",
+      "storage": "50 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 8.1 or 10",
+      "processor": "Intel Core i5 3570K or AMD Ryzen 3 1300x",
+      "memory": "16 GB RAM",
+      "graphics": "Nvidia GeForce GTX 980 or AMD R9 290X",
+      "storage": "50 GB available space"
     }
   },
   {
@@ -136,14 +262,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "90 GB available space"
+      "storage": "100 GB available space (SSD Required)"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "90 GB available space (SSD recommended)"
+      "storage": "100 GB available space (SSD Required)"
     }
   },
   {
@@ -178,14 +304,14 @@
       "processor": "AMD Ryzen 5 2600X, Intel Core i7-6800K",
       "memory": "16 GB RAM",
       "graphics": "AMD Radeon RX 5600 XT, NVIDIA GeForce 1080",
-      "storage": "70 GB available space (SSD Required)"
+      "storage": "95 GB available space (SSD Required)"
     },
     "recommended_specs": {
       "os": "Windows 10/11 with updates",
       "processor": "AMD Ryzen 5 3600X, Intel Core i5-10600K",
       "memory": "32 GB RAM",
       "graphics": "AMD Radeon RX 6800, NVIDIA GeForce RTX 3080",
-      "storage": "70 GB available space (SSD Required)"
+      "storage": "95 GB available space (SSD Required)"
     }
   },
   {
@@ -199,14 +325,14 @@
       "processor": "AMD Ryzen 3 1200 / Intel Core i5-7500",
       "memory": "8 GB RAM",
       "graphics": "AMD Radeon RX 560 with 4GB VRAM / NVIDIA GeForce GTX 1050 Ti with 4GB VRAM",
-      "storage": "60 GB available space"
+      "storage": "70 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10 (64 bit)",
       "processor": "AMD Ryzen 5 3600 / Intel Core i7 8700",
       "memory": "16 GB RAM",
       "graphics": "AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070",
-      "storage": "60 GB available space"
+      "storage": "70 GB available space"
     }
   },
   {
@@ -241,14 +367,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "90 GB available space"
+      "storage": "90.5 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "90 GB available space (SSD recommended)"
+      "storage": "90.5 GB available space (SSD recommended)"
     }
   },
   {
@@ -262,14 +388,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "90 GB available space"
+      "storage": "90.5 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "90 GB available space (SSD recommended)"
+      "storage": "90.5 GB available space (SSD recommended)"
     }
   },
   {
@@ -291,27 +417,6 @@
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GTX 1060 6GB or AMD Radeon RX 580 8GB",
       "storage": "75 GB available space (SSD Recommended)"
-    }
-  },
-  {
-    "id": 1761390234460,
-    "title": "The Last of Us Part I",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1750959031",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 10 Version 1909 or newer",
-      "processor": "AMD Ryzen 5 1500X, Intel Core i7-4770K",
-      "memory": "16 GB RAM",
-      "graphics": "AMD Radeon RX 470 (4 GB), NVIDIA GeForce GTX 970 (4 GB)",
-      "storage": "100 GB available space (SSD)"
-    },
-    "recommended_specs": {
-      "os": "Windows 10 Version 1909 or newer",
-      "processor": "AMD Ryzen 5 3600X, Intel Core i7-8700",
-      "memory": "16 GB RAM",
-      "graphics": "AMD Radeon RX 5700 XT (8 GB), NVIDIA GeForce RTX 2070 SUPER (8 GB)",
-      "storage": "100 GB available space (SSD)"
     }
   },
   {
@@ -388,14 +493,14 @@
       "processor": "Intel Core i5-9600K or AMD Ryzen 5 2600X",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GTX 1060 6GB or AMD RX 590 8GB",
-      "storage": "100 GB available space"
+      "storage": "140 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10 64-bit Version 21H1 or newer",
       "processor": "Intel Core i5-9600K or AMD Ryzen 5 2600X",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2070 or AMD Radeon RX 6600 XT",
-      "storage": "100 GB available space"
+      "storage": "140 GB available space (SSD Recommended)"
     }
   },
   {
@@ -409,14 +514,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "100 GB available space"
+      "storage": "140 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "100 GB available space (SSD recommended)"
+      "storage": "140 GB available space (SSD Recommended)"
     }
   },
   {
@@ -430,35 +535,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "150 GB available space"
+      "storage": "149 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "150 GB available space (SSD recommended)"
-    }
-  },
-  {
-    "id": 1761390594823,
-    "title": "ELDEN RING",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg?t=1748630546",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 10",
-      "processor": "Intel Core i5-8400 or AMD Ryzen 3 3300X",
-      "memory": "12 GB RAM",
-      "graphics": "NVIDIA GeForce GTX 1060 3GB or AMD Radeon RX 580 4GB",
-      "storage": "60 GB available space"
-    },
-    "recommended_specs": {
-      "os": "Windows 10/11",
-      "processor": "Intel Core i7-8700K or AMD Ryzen 5 3600X",
-      "memory": "16 GB RAM",
-      "graphics": "NVIDIA GeForce GTX 1070 8GB or AMD Radeon RX Vega 56 8GB",
-      "storage": "60 GB available space"
+      "storage": "149 GB available space (SSD recommended)"
     }
   },
   {
@@ -577,14 +661,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "40 GB available space"
+      "storage": "50 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "40 GB available space (SSD recommended)"
+      "storage": "50 GB available space (SSD recommended)"
     }
   },
   {
@@ -598,14 +682,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -619,14 +703,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "150 GB available space"
+      "storage": "150 GB available space (SSD Required)"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "150 GB available space (SSD recommended)"
+      "storage": "150 GB available space (SSD Required)"
     }
   },
   {
@@ -648,27 +732,6 @@
       "memory": "16 GB RAM",
       "graphics": "GeForce RTX 2070 / Radeon RX 6600 or equivalent",
       "storage": "50 GB available space"
-    }
-  },
-  {
-    "id": 1761391329457,
-    "title": "The Witcher 3: Wild Hunt",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1761131270",
-    "link": "",
-    "minimum_specs": {
-      "os": "64-bit Windows 7 or 64-bit Windows 8 (8.1)",
-      "processor": "Intel CPU Core i5-2500K 3.3GHz / AMD CPU Phenom II X4 940",
-      "memory": "6 GB RAM",
-      "graphics": "Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
-      "storage": "35 GB available space"
-    },
-    "recommended_specs": {
-      "os": "64-bit Windows 7 or 64-bit Windows 8 (8.1)",
-      "processor": "Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz",
-      "memory": "8 GB RAM",
-      "graphics": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
-      "storage": "35 GB available space"
     }
   },
   {
@@ -766,14 +829,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -829,14 +892,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "100 GB available space"
+      "storage": "125 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "100 GB available space (SSD recommended)"
+      "storage": "125 GB available space (SSD recommended)"
     }
   },
   {
@@ -850,14 +913,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "100 GB available space"
+      "storage": "125 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "100 GB available space (SSD recommended)"
+      "storage": "125 GB available space (SSD recommended)"
     }
   },
   {
@@ -871,14 +934,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -892,35 +955,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
-    }
-  },
-  {
-    "id": 1761391855071,
-    "title": "Hogwarts Legacy",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/990080/a3cdc6f40d97df8ac993679c2dd1edeb5222421e/header.jpg?t=1753912780",
-    "link": "",
-    "minimum_specs": {
-      "os": "64-bit Windows 10",
-      "processor": "Intel Core i5-6600 (3.3Ghz) or AMD Ryzen 5 1400 (3.2Ghz)",
-      "memory": "16 GB RAM",
-      "graphics": "NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB",
-      "storage": "85 GB available space"
-    },
-    "recommended_specs": {
-      "os": "64-bit Windows 10",
-      "processor": "Intel Core i7-8700 (3.2Ghz) or AMD Ryzen 5 3600 (3.6 Ghz)",
-      "memory": "16 GB RAM",
-      "graphics": "NVIDIA GeForce 1080 Ti or AMD Radeon RX 5700 XT or INTEL Arc A770",
-      "storage": "85 GB available space (SSD)"
+      "storage": "TBA"
     }
   },
   {
@@ -934,14 +976,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -1018,14 +1060,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -1039,14 +1081,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -1123,14 +1165,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "110 GB available space"
+      "storage": "150 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "110 GB available space (SSD recommended)"
+      "storage": "150 GB available space (SSD recommended)"
     }
   },
   {
@@ -1165,14 +1207,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "20 GB available space"
+      "storage": "9 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "20 GB available space (SSD recommended)"
+      "storage": "9 GB available space (SSD recommended)"
     }
   },
   {
@@ -1186,14 +1228,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -1291,14 +1333,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "90 GB available space"
+      "storage": "95 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "90 GB available space (SSD recommended)"
+      "storage": "95 GB available space (SSD recommended)"
     }
   },
   {
@@ -1333,14 +1375,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "20 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "20 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -1375,14 +1417,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "80 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "80 GB available space (SSD recommended)"
+      "storage": "TBA"
     }
   },
   {
@@ -1417,35 +1459,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "50 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "50 GB available space (SSD recommended)"
-    }
-  },
-  {
-    "id": 1761400000001,
-    "title": "Baldur's Gate 3",
-    "price": "Rp 8.900",
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1086940/header.jpg?t=1760000001",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 10 64-bit",
-      "processor": "Intel I5 4690 / AMD FX 8350",
-      "memory": "8 GB RAM",
-      "graphics": "Nvidia GeForce GTX 970 / RX 480 (4GB+ of VRAM)",
-      "storage": "150 GB available space (SSD)"
-    },
-    "recommended_specs": {
-      "os": "Windows 10 64-bit",
-      "processor": "Intel I7 8700K / AMD Ryzen 5 3600",
-      "memory": "16 GB RAM",
-      "graphics": "Nvidia GeForce RTX 2060 Super / RX 5700 XT (8GB+ of VRAM)",
-      "storage": "150 GB available space (SSD)"
+      "storage": "TBA"
     }
   },
   {
@@ -1480,14 +1501,14 @@
       "processor": "i5-3570K 3.4 GHz 4 Core",
       "memory": "16 GB RAM",
       "graphics": "GeForce GTX 1050 (2GB)",
-      "storage": "40 GB available space"
+      "storage": "40 GB available space (SSD Recommended)"
     },
     "recommended_specs": {
       "os": "Windows 10 or later (64-Bit)",
       "processor": "i9-9900K 3.6 GHz 8 Core",
       "memory": "32 GB RAM",
       "graphics": "GeForce RTX 2070",
-      "storage": "40 GB available space (SSD)"
+      "storage": "40 GB available space (SSD Recommended)"
     }
   },
   {
@@ -1501,14 +1522,14 @@
       "processor": "INTEL CORE I5-8400 or AMD RYZEN 3 3300X",
       "memory": "12 GB RAM",
       "graphics": "NVIDIA GeForce GTX 1060 3GB or AMD Radeon RX 570 4GB",
-      "storage": "20 GB available space (SSD)"
+      "storage": "20 GB available space"
     },
     "recommended_specs": {
       "os": "64-bit Windows 10",
       "processor": "INTEL CORE I7-8700K or AMD RYZEN 5 3600X",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce 1080Ti or AMD Radeon RX 5700 XT",
-      "storage": "20 GB available space (SSD)"
+      "storage": "20 GB available space (SSD Recommended)"
     }
   },
   {
@@ -1543,14 +1564,14 @@
       "processor": "2.0 Ghz",
       "memory": "2.5 GB RAM",
       "graphics": "128mb Video Memory, capable of Shader Model 2.0+",
-      "storage": "200 MB available space"
+      "storage": "500 MB available space"
     },
     "recommended_specs": {
       "os": "Windows 7, 8/8.1, 10",
       "processor": "Dual Core 3.0 Ghz",
       "memory": "4 GB RAM",
       "graphics": "256mb Video Memory, capable of Shader Model 2.0+",
-      "storage": "200 MB available space"
+      "storage": "500 MB available space"
     }
   },
   {
@@ -1564,14 +1585,14 @@
       "processor": "Core 2 Duo",
       "memory": "4 GB RAM",
       "graphics": "Intel HD Graphics 4000 or other shader model 4.0",
-      "storage": "1 GB available space"
+      "storage": "700 MB available space"
     },
     "recommended_specs": {
       "os": "Windows 10",
       "processor": "Core 2 Duo",
       "memory": "4 GB RAM",
       "graphics": "Intel HD Graphics 4000 or other shader model 4.0",
-      "storage": "1 GB available space"
+      "storage": "700 MB available space"
     }
   },
   {
@@ -1648,14 +1669,14 @@
       "processor": "Intel Core i7-3770 / AMD FX-9590",
       "memory": "10 GB RAM",
       "graphics": "GTX 670 2GB / AMD R9 280",
-      "storage": "25 GB available space (SSD)"
+      "storage": "25 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 11 64bit",
       "processor": "Intel Core i7-4790K / AMD Ryzen 5 1600",
       "memory": "16 GB RAM",
       "graphics": "GTX 980 / AMD R9 Fury",
-      "storage": "25 GB available space (SSD)"
+      "storage": "25 GB available space (SSD Recommended)"
     }
   },
   {
@@ -1669,14 +1690,14 @@
       "processor": "Intel Core i5-2400/AMD FX-8320 or better",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GTX 670 2GB/AMD Radeon HD 7870 2GB or better",
-      "storage": "60 GB available space"
+      "storage": "400 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 7/8.1/10 (64-bit versions)",
       "processor": "Intel Core i5-2400/AMD FX-8320 or better",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GTX 670 2GB/AMD Radeon HD 7870 2GB or better",
-      "storage": "60 GB available space"
+      "storage": "400 GB available space (SSD Recommended)"
     }
   },
   {
@@ -1711,14 +1732,14 @@
       "processor": "Intel Core i3 M380",
       "memory": "2 GB RAM",
       "graphics": "OpenGL 3.0+",
-      "storage": "1200 MB available space"
+      "storage": "1.2 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 7 or newer",
       "processor": "Intel Core i3 M380",
       "memory": "2 GB RAM",
       "graphics": "OpenGL 3.0+",
-      "storage": "1200 MB available space"
+      "storage": "1.2 GB available space"
     }
   },
   {
@@ -1774,14 +1795,14 @@
       "processor": "i3",
       "memory": "2 GB RAM",
       "graphics": "Any",
-      "storage": "449 MB available space"
+      "storage": "500 MB available space"
     },
     "recommended_specs": {
       "os": "Windows 10",
       "processor": "i5",
       "memory": "4 GB RAM",
       "graphics": "Any",
-      "storage": "449 MB available space"
+      "storage": "500 MB available space"
     }
   },
   {
@@ -1816,14 +1837,14 @@
       "processor": "AMD Ryzen 5 2600X, Intel Core i7-6800K",
       "memory": "16 GB RAM",
       "graphics": "AMD Radeon RX 5700, NVIDIA GeForce 1070 Ti",
-      "storage": "125 GB available space (SSD)"
+      "storage": "125 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 with updates",
       "processor": "AMD Ryzen 5 3600X, Intel i5-10600K",
       "memory": "16 GB RAM",
       "graphics": "AMD Radeon RX 6800 XT, NVIDIA GeForce RTX 2080",
-      "storage": "125 GB available space (SSD)"
+      "storage": "125 GB available space (SSD Recommended)"
     }
   },
   {
@@ -1879,14 +1900,14 @@
       "processor": "Intel® Core™ i3-4130 or Core™ i5-3470 or AMD FX™-6100",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA® GeForce® GT 1030 (DDR4) or AMD Radeon™ RX 550",
-      "storage": "36 GB available space"
+      "storage": "60 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10 (64-bit)",
       "processor": "Intel® Core™ i5-4460 or AMD FX™-8300",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA® GeForce® GTX 1060 (VRAM 3GB) or AMD Radeon™ RX 570 (VRAM 4GB)",
-      "storage": "36 GB available space"
+      "storage": "60 GB available space"
     }
   },
   {
@@ -1900,14 +1921,14 @@
       "processor": "Intel® Core™ i5-4460, 3.20GHz or AMD FX™-6300",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA® GeForce® GTX 760 or AMD Radeon™ R7 260x (VRAM 2GB)",
-      "storage": "48 GB available space"
+      "storage": "100 GB available space"
     },
     "recommended_specs": {
       "os": "WINDOWS® 7, 8, 8.1, 10 (64-bit required)",
       "processor": "Intel® Core™ i7 3770 3.4GHz or Intel® Core™ i3 8350 4GHz or AMD Ryzen™ 5 1500X",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA® GeForce® GTX 1060 (VRAM 3GB) or AMD Radeon™ RX 570 (VRAM 4GB)",
-      "storage": "48 GB available space"
+      "storage": "100 GB available space"
     }
   },
   {
@@ -2026,35 +2047,14 @@
       "processor": "Intel Core i5 or AMD equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GeForce GTX 970 or AMD equivalent",
-      "storage": "100 GB available space"
+      "storage": "TBA"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel Core i7 or AMD equivalent",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD equivalent",
-      "storage": "100 GB available space (SSD recommended)"
-    }
-  },
-  {
-    "id": 1761520000001,
-    "title": "Grand Theft Auto V",
-    "price": "Rp 8.900",
-    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
-    "link": "",
-    "minimum_specs": {
-      "os": "Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1",
-      "processor": "Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz",
-      "memory": "4 GB RAM",
-      "graphics": "NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)",
-      "storage": "72 GB available space"
-    },
-    "recommended_specs": {
-      "os": "Windows 10 64 Bit, Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1",
-      "processor": "Intel Core i5 3470 @ 3.2GHZ (4 CPUs) / AMD X8 FX-8350 @ 4GHZ (8 CPUs)",
-      "memory": "8 GB RAM",
-      "graphics": "NVIDIA GTX 660 2GB / AMD HD7870 2GB",
-      "storage": "72 GB available space"
+      "storage": "TBA"
     }
   },
   {
@@ -2075,7 +2075,7 @@
       "processor": "Intel Core i7-9700K or AMD Ryzen 7 3700X",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT",
-      "storage": "100 GB available space (SSD)"
+      "storage": "100 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2110,14 +2110,14 @@
       "processor": "Intel® Core™ i5-6600 | AMD Ryzen™ 3 3100 or Ryzen™ 5 2600",
       "memory": "8 GB RAM",
       "graphics": "Nvidia GeForce® GTX 980 or AMD Radeon™ RX 470 or Intel® Arc™ A750",
-      "storage": "100 GB available space"
+      "storage": "140 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10/11 64-bit",
       "processor": "Intel® Core™ i5-8400 | AMD Ryzen™ 5 3600X",
       "memory": "8 GB RAM",
       "graphics": "Nvidia GeForce® GTX 1080 Ti or AMD Radeon™ RX 5700 XT or Intel® Arc™ A770",
-      "storage": "100 GB available space (SSD)"
+      "storage": "140 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2215,14 +2215,14 @@
       "processor": "4 core / 8 threads | Intel Core i7-7700 | Ryzen 5 1400",
       "memory": "8 GB RAM",
       "graphics": "8GB VRAM | GTX 1070 | Radeon RX 580",
-      "storage": "155 GB available space"
+      "storage": "155 GB available space (SSD Recommended)"
     },
     "recommended_specs": {
       "os": "Windows 10 64-bit",
       "processor": "4 core / 8 threads | Intel Core i5 11600K | Ryzen 5 5600X",
       "memory": "16 GB RAM",
       "graphics": "8GB VRAM | RTX2070 | RX 6700 XT",
-      "storage": "155 GB available space (SSD)"
+      "storage": "155 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2236,14 +2236,14 @@
       "processor": "Intel Core i3-8100 or AMD Ryzen 3 1300X",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce GTX 1650 4GB or AMD Radeon RX 5500XT 4GB",
-      "storage": "150 GB available space (SSD)"
+      "storage": "150 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10 64-bit (version 1909 or higher)",
       "processor": "Intel Core i5-8600 or AMD Ryzen 5 3600",
       "memory": "16 GB RAM",
       "graphics": "NVIDIA GeForce RTX 3060 or AMD Radeon RX 5700",
-      "storage": "150 GB available space (SSD)"
+      "storage": "150 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2264,7 +2264,7 @@
       "processor": "Intel® Core™ i7-9700K / AMD Ryzen™ 7 3700X",
       "memory": "32 GB RAM",
       "graphics": "NVIDIA® GeForce® RTX 3070 Ti / AMD Radeon™ RX 6800",
-      "storage": "40 GB available space (SSD)"
+      "storage": "40 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2278,14 +2278,14 @@
       "processor": "Ryzen 5 2600x, Core i5 8600",
       "memory": "16 GB RAM",
       "graphics": "AMD RX 5700, GTX 1070",
-      "storage": "50 GB available space"
+      "storage": "50 GB available space (SSD Recommended)"
     },
     "recommended_specs": {
       "os": "Window 10 64-bit",
       "processor": "Ryzen 5 5600X,Core i5 11600K",
       "memory": "16 GB RAM",
       "graphics": "Radeon RX 6700 XT, Geforce RTX 2070",
-      "storage": "50 GB available space (SSD)"
+      "storage": "50 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2299,14 +2299,14 @@
       "processor": "AMD Ryzen 3 1200 ／ Intel Core i5-7500",
       "memory": "8 GB RAM",
       "graphics": "AMD Radeon RX 560 with 4GB VRAM ／ NVIDIA GeForce GTX 1050 Ti with 4GB VRAM",
-      "storage": "40 GB available space"
+      "storage": "45 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10 (64 bit)",
       "processor": "AMD Ryzen 5 3600 ／ Intel Core i7 8700",
       "memory": "16 GB RAM",
       "graphics": "AMD Radeon RX 5700 ／ NVIDIA GeForce GTX 1070",
-      "storage": "40 GB available space"
+      "storage": "45 GB available space"
     }
   },
   {
@@ -2446,14 +2446,14 @@
       "processor": "Intel Core i5-2300 2.8 GHz/AMD Phenom II X4 945 3.0 GHz or equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GTX 550 Ti 2GB/AMD Radeon HD 7870 2GB or equivalent",
-      "storage": "30 GB available space"
+      "storage": "35 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 7/8/10 (64-bit OS required)",
       "processor": "Intel Core i7 4790 3.6 GHz/AMD FX-9590 4.7 GHz or equivalent",
       "memory": "8 GB RAM",
       "graphics": "NVIDIA GTX 780 3GB/AMD Radeon R9 290X 4GB or equivalent",
-      "storage": "30 GB available space"
+      "storage": "35 GB available space"
     }
   },
   {
@@ -2467,14 +2467,14 @@
       "processor": "2.6 GHz Quad Core or similar",
       "memory": "8 GB RAM",
       "graphics": "GeForce GTX 950 or Radeon HD 7970",
-      "storage": "10 GB available space"
+      "storage": "12 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 7 or later",
       "processor": "i5 3GHz or Ryzen 5 3GHz",
       "memory": "16 GB RAM",
       "graphics": "GeForce GTX 1060 or Radeon RX 580",
-      "storage": "10 GB available space"
+      "storage": "12 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2614,14 +2614,14 @@
       "processor": "i5-3570 3.4 GHz 4 Core",
       "memory": "8 GB RAM",
       "graphics": "GTX 770 2GB",
-      "storage": "15 GB available space"
+      "storage": "20 GB available space"
     },
     "recommended_specs": {
       "os": "Windows 10 or later (64-Bit)",
       "processor": "i7-3770 3.4 GHz 4 Core",
       "memory": "8 GB RAM",
       "graphics": "GTX 1060 6GB",
-      "storage": "15 GB available space (SSD)"
+      "storage": "20 GB available space (SSD Recommended)"
     }
   },
   {
@@ -2664,6 +2664,174 @@
       "memory": "2048 MB RAM",
       "graphics": "NVIDIA GeForce GTX 660, AMD HD7870, 2 GB VRAM or above",
       "storage": "1024 MB available space"
+    }
+  },
+  {
+    "id": 1761540000001,
+    "title": "Mafia: Definitive Edition",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030840/header.jpg?t=1680026321",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel Core-i5 2550K 3.4GHz / AMD FX-8120 3.1 GHz",
+      "memory": "6 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
+      "storage": "50 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel Core-i7 3770 3.4GHz / AMD FX-8350 4.2GHz",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 1080 / AMD Radeon RX 5700",
+      "storage": "50 GB available space"
+    }
+  },
+  {
+    "id": 1761540000002,
+    "title": "Mafia II: Definitive Edition",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1030830/header.jpg?t=1680026287",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 7 64-bit",
+      "processor": "Intel Core i5-2500K / AMD FX-8120",
+      "memory": "6 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 660 / AMD Radeon HD 7870",
+      "storage": "50 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel Core i7-3770 / AMD FX-8350",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 780 / AMD Radeon R9 290X",
+      "storage": "50 GB available space"
+    }
+  },
+  {
+    "id": 1761540000003,
+    "title": "Mafia III: Definitive Edition",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/360430/header.jpg?t=1680026251",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 7 64-bit",
+      "processor": "Intel I5-2500K, AMD FX-8120",
+      "memory": "6 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 660, AMD Radeon HD7870",
+      "storage": "50 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel I7-3770, AMD FX 8350 4.0 Ghz",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA Gefore GTX 780 or GeForce GTX 1060, AMD Radeon R9 290X",
+      "storage": "50 GB available space"
+    }
+  },
+  {
+    "id": 1761540000004,
+    "title": "UNCHARTED™: Legacy of Thieves Collection",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659420/header.jpg?t=1701419424",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel i5-4330, AMD Ryzen 3 1200",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA GTX 960 (4 GB), AMD R9 290X (4 GB)",
+      "storage": "126 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 64-bit",
+      "processor": "Intel i7-4770, AMD Ryzen 5 1500X",
+      "memory": "16 GB RAM",
+      "graphics": "NVIDIA GTX 1060 (6 GB), AMD RX 570 (4 GB)",
+      "storage": "126 GB available space (SSD Recommended)"
+    }
+  },
+  {
+    "id": 1761540000005,
+    "title": "The Witcher: Enhanced Edition Director's Cut",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/20900/header.jpg?t=1668433634",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows (XP, Vista, 7, 8, 10)",
+      "processor": "Intel Pentium 4 2.4 GHz or Athlon 64 +2800",
+      "memory": "1 GB RAM",
+      "graphics": "NVIDIA GeForce 6600 or ATI Radeon 9800",
+      "storage": "15 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows (XP, Vista, 7, 8, 10)",
+      "processor": "Intel Pentium 4 3.0 GHz or AMD Athlon 64 +3000",
+      "memory": "2 GB RAM",
+      "graphics": "NVIDIA GeForce 7800 GTX or ATI Radeon X1950 XT",
+      "storage": "15 GB available space"
+    }
+  },
+  {
+    "id": 1761540000006,
+    "title": "The Witcher 2: Assassins of Kings Enhanced Edition",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/20920/header.jpg?t=1701933162",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows XP/Vista/7",
+      "processor": "Intel 2.2 GHz Dual-Core or AMD 2.5 GHz Dual-Core",
+      "memory": "2 GB RAM",
+      "graphics": "GeForce 8800 (512 MB) or Radeon HD3850 (512 MB)",
+      "storage": "25 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 7/8/10 64-bit",
+      "processor": "Intel or AMD Quad-Core",
+      "memory": "4 GB RAM",
+      "graphics": "GeForce 260 (1 GB) or Radeon HD4850 (1 GB)",
+      "storage": "25 GB available space"
+    }
+  },
+  {
+    "id": 1761540000007,
+    "title": "Watch_Dogs™",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/243470/header.jpg?t=1701419446",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows Vista (with SP2), Windows 7 (with SP1) or Windows 8 (64 bit only)",
+      "processor": "Intel Core 2 Quad Q8400 @ 2.66Ghz or AMD Phenom II X4 940 @ 3.0Ghz",
+      "memory": "6 GB RAM",
+      "graphics": "DirectX 11 graphics card with 1 GB Video RAM - Nvidia Geforce GTX 460 or AMD Radeon HD 5770",
+      "storage": "25 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows Vista (with SP2), Windows 7 (with SP1) or Windows 8 (64 bit only)",
+      "processor": "Intel Core i7-3770 @ 3.5 GHz or AMD FX-8350 X8 @ 4 GHz",
+      "memory": "8 GB RAM",
+      "graphics": "DirectX 11 graphics card with 2 GB Video RAM - Nvidia Geforce GTX 560 ti or AMD Radeon HD 7850",
+      "storage": "25 GB available space"
+    }
+  },
+  {
+    "id": 1761540000008,
+    "title": "Watch Dogs®: Legion",
+    "price": "Rp 8.900",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2239550/header.jpg?t=1701419451",
+    "link": "",
+    "minimum_specs": {
+      "os": "Windows 10 (x64)",
+      "processor": "Intel Core i5-4460 / AMD Ryzen 5 1400",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 970/GeForce GTX 1650 or AMD Radeon R9 290X",
+      "storage": "80 GB available space"
+    },
+    "recommended_specs": {
+      "os": "Windows 10 (x64)",
+      "processor": "Intel Core i7-4790 / AMD Ryzen 5 1600",
+      "memory": "8 GB RAM",
+      "graphics": "NVIDIA GeForce GTX 1060/GeForce GTX 1660 Super or AMD Radeon RX 480",
+      "storage": "80 GB available space (SSD Recommended)"
     }
   }
 ]
